@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Salut 
+                    Salut fqfqfqefhyhyhyhyh
                 </div>
 
                 <div class="links">
