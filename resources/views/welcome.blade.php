@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Salut petit Ali
+                    Salut 
                 </div>
 
                 <div class="links">
