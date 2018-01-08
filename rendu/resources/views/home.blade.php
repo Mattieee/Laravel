@@ -44,5 +44,10 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12" style="background:white;">
+            <comment comment-url="{{ $pageId }}"></comment>
+        </div>
+    </div>
 </div>
 @endsection
