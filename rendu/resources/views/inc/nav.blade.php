@@ -20,9 +20,11 @@
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                &nbsp; <li><a href="/rendu/public/">Accueil</a></li>
-                <li><a href="/rendu/public/apropos">A propos</a></li>
-                <li><a href="/rendu/public/articles">Articles</a></li>
+                &nbsp; <li><a href="/">Accueil</a></li>
+                <li><a href="/apropos">A propos</a></li>
+                <li><a href="/articles">Articles</a></li>
+                <li><a href="/comments">Espace commentaires</a></li>
+
             </ul>
 
             <!-- Right Side Of Navbar -->
@@ -38,7 +40,7 @@
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a href="/rendu/public/home">Panel d'administration</a></li>
+                            <li><a href="/home">Panel d'administration</a></li>
                             <li>
                                 <a href="{{ route('logout') }}"
                                    onclick="event.preventDefault();

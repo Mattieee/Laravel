@@ -6,14 +6,13 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
-
                 <div class="panel-body">
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
                         </div>
                     @endif
-                        <a href="/rendu/public/articles/create" class="btn btn-default">Ajouter un article</a>
+                        <a href="/articles/create" class="btn btn-default">Ajouter un article</a>
                         <hr>
                         @if(count($articles) > 0)
 
@@ -26,7 +25,7 @@
                                 @foreach($articles as $article)
                                     <tr>
                                         <td>{{$article->title}}</td>
-                                        <td><a class="btn btn-default" href="/rendu/public/articles/{{$article->id}}/edit">Éditer</a></td>
+                                        <td><a class="btn btn-default" href="/rendu/{{$article->id}}/edit">Éditer</a></td>
                                         <td>
                                             {!! Form::open(['action' => ['ArticlesController@destroy', $article->id], 'method' => 'POST', 'class' => 'pull-right']) !!}
                                             {{Form::hidden('_method', 'DELETE')}}
@@ -42,11 +41,6 @@
                         @endif
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12" style="background:white;">
-            <comment comment-url="{{ $pageId }}"></comment>
         </div>
     </div>
 </div>
