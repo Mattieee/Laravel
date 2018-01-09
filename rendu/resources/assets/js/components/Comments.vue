@@ -200,7 +200,7 @@ export default {
                 this.commentsData = _.orderBy(res.data, ['votes'], ['desc']);
                 this.comments = 1;
             });
-            
+
         },
         showComments(index) {
             if (!this.viewcomment[index]) {
